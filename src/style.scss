@@ -25,6 +25,10 @@ body {
     gap: 25px;
     box-shadow: 0 10px 40px -20px #00000091;
 
+    :hover {
+        cursor: pointer;
+    }
+
     &__circle-indicator {
         position: absolute;
         width: 60px;
