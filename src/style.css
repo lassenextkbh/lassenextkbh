@@ -25,7 +25,7 @@ body {
   gap: 25px;
   box-shadow: 0 10px 40px -20px rgba(0, 0, 0, 0.568627451);
 }
-.tab-bar :hover {
+.tab-bar a:hover {
   cursor: pointer;
 }
 .tab-bar__circle-indicator {
