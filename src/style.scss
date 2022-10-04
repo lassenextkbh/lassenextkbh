@@ -4,6 +4,7 @@
     --theme-3: #2fcf51;
     --theme-4: #f2e75e;
     --theme-5: #e95181;
+    --theme-6: #ff8249;
 }
 
 body {
@@ -21,7 +22,8 @@ body {
     justify-content: space-between;
     padding: 20px 30px;
     border-radius: 15px;
-    position: relative;
+    position: fixed;
+    bottom: 0.6rem;
     gap: 25px;
     box-shadow: 0 10px 40px -20px #00000091;
 
