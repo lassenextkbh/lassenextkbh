@@ -4,12 +4,16 @@ let page = document.querySelector('.page');
 
 function pageAnimate(lastPage, newPage) {
     if (parseInt(lastPage) > parseInt(newPage)) {
-        console.log(document.getElementById(newPage));
-        console.log("navbar shifted left");
+        console.clear();
+        console.log("navbar changed towards left");
+        console.log("page-" + lastPage + " animate-right-out");
+        console.log("page-" + newPage + " animate-left-in");
     }
     else if (parseInt(lastPage) < parseInt(newPage)) {
-        console.log(document.getElementById(newPage));
-        console.log("navbar shifted right");
+        console.clear();
+        console.log("navbar changed towards right");
+        console.log("page-" + lastPage + " animate-left-out");
+        console.log("page-" + newPage + " animate-right-in");
     }
 }
 
