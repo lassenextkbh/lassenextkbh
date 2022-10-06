@@ -16,11 +16,9 @@ body {
   transition: background-color 0.5s;
 }
 
-.page {
+.page div {
   height: auto;
   width: auto;
-}
-.page__item {
   top: 0;
   left: 0;
   justify-content: center;
@@ -28,6 +26,10 @@ body {
   position: absolute;
   min-height: 100vh;
   min-width: 100vw;
+}
+
+.page__home {
+  color: white;
 }
 
 .tab-bar {
