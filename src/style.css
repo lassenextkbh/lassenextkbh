@@ -16,6 +16,20 @@ body {
   transition: background-color 0.5s;
 }
 
+.page {
+  height: auto;
+  width: auto;
+}
+.page__item {
+  top: 0;
+  left: 0;
+  justify-content: center;
+  text-align: center;
+  position: absolute;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
 .tab-bar {
   background-color: white;
   display: flex;
