@@ -10,8 +10,19 @@
   min-width: 100vw;
 }
 .page div h1 {
-  font-size: 100px;
+  font-size: 60px;
   font-weight: bold;
+  background-color: white;
+  padding: 20px 30px;
+  margin: 20px;
+  border-radius: 15px;
+  box-shadow: 0 10px 40px -20px rgba(0, 0, 0, 0.1333333333);
+}
+.page div h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 100px 0 100px;
 }
 
 .page {
@@ -21,18 +32,105 @@
 .page__home {
   font-style: normal;
 }
+.page__home h1 {
+  color: var(--theme-1);
+}
 .page__projects {
   font-style: normal;
 }
-.page__code {
-  font-style: normal;
+.page__projects h1 {
+  color: var(--theme-2);
+}
+.page__code h1 {
+  color: var(--theme-3);
 }
 .page__mail {
-  font-style: normal;
+  color: black;
 }
-.page__user {
-  font-style: normal;
+.page__mail h1 {
+  color: var(--theme-4);
 }
-.page__settings {
-  font-style: normal;
+.page__user h1 {
+  color: var(--theme-5);
+}
+.page__settings h1 {
+  color: var(--theme-6);
+}
+
+@-webkit-keyframes pageLeftInAnimate {
+  0% {
+    left: -150%;
+  }
+  50% {
+    left: 100px;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes pageLeftInAnimate {
+  0% {
+    left: -150%;
+  }
+  50% {
+    left: 100px;
+  }
+  100% {
+    left: 0;
+  }
+}
+@-webkit-keyframes pageLeftOutAnimate {
+  from {
+    left: 0;
+  }
+  to {
+    left: -150%;
+  }
+}
+@keyframes pageLeftOutAnimate {
+  from {
+    left: 0;
+  }
+  to {
+    left: -150%;
+  }
+}
+@-webkit-keyframes pageRightInAnimate {
+  0% {
+    left: 150%;
+  }
+  50% {
+    left: -100px;
+  }
+  100% {
+    left: 0;
+  }
+}
+@keyframes pageRightInAnimate {
+  0% {
+    left: 150%;
+  }
+  50% {
+    left: -100px;
+  }
+  100% {
+    left: 0;
+  }
+}
+@-webkit-keyframes pageRightOutAnimate {
+  from {
+    left: 0;
+  }
+  to {
+    left: 150%;
+  }
+}
+@keyframes pageRightOutAnimate {
+  from {
+    left: 0;
+  }
+  to {
+    left: 150%;
+  }
 }/*# sourceMappingURL=page.css.map */

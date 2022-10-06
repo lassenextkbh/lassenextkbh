@@ -1,5 +1,18 @@
 var lastPage = "1";
 
+let page = document.querySelector('.page');
+
+function pageAnimate(lastPage, newPage) {
+    if (parseInt(lastPage) > parseInt(newPage)) {
+        console.log(document.getElementById(newPage));
+        console.log("navbar shifted left");
+    }
+    else if (parseInt(lastPage) < parseInt(newPage)) {
+        console.log(document.getElementById(newPage));
+        console.log("navbar shifted right");
+    }
+}
+
 document.querySelectorAll('.tab-bar').forEach(function(item){
 
     let children = Array.from(item.children);
@@ -10,6 +23,7 @@ document.querySelectorAll('.tab-bar').forEach(function(item){
             childItem.addEventListener('click', () => {
                 let color = getComputedStyle(document.documentElement).getPropertyValue(`--theme-${childItem.dataset.theme}`);
                 
+                pageAnimate(lastPage, childItem.dataset.theme)
                 document.getElementById(lastPage).style.visibility = 'hidden';
                 document.getElementById(childItem.dataset.theme).style.visibility = "visible";
                 lastPage = childItem.dataset.theme;

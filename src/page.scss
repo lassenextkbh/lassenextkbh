@@ -10,8 +10,20 @@
     min-width: 100vw;
 
     h1 {
-        font-size: 100px;
+        font-size: 60px;
         font-weight: bold;
+        background-color: white;
+        padding: 20px 30px;
+        margin: 20px;
+        border-radius: 15px;
+        box-shadow: 0 10px 40px -20px #00000022;
+    }
+
+    h2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 100px 0 100px;
     }
 }
 
@@ -21,25 +33,83 @@
 
     &__home {
         font-style: normal;
+
+        h1 {
+            color: var(--theme-1);
+        }
     }
 
     &__projects {
         font-style: normal;
+        h1 {
+            color: var(--theme-2);
+        }
     }
 
     &__code {
-        font-style: normal;
+        h1 {
+            color: var(--theme-3);
+        }
     }
 
     &__mail {
-        font-style: normal;
+        color: black;
+        h1 {
+            color: var(--theme-4);
+        }
     }
 
     &__user {
-        font-style: normal;
+        h1 {
+            color: var(--theme-5);
+        }
     }
 
     &__settings {
-        font-style: normal;
+        h1 {
+            color: var(--theme-6);
+        }
+    }   
+}
+
+@keyframes pageLeftInAnimate {
+    0% {
+        left: -150%;
+    }
+    50% {
+        left: 100px;
+    }
+    100% {
+        left: 0;
+    }
+}
+
+@keyframes pageLeftOutAnimate {
+    from {
+        left: 0;
+    }
+    to {
+        left: -150%;
+    }
+}
+
+@keyframes pageRightInAnimate {
+    0% {
+        left: 150%;
+    }
+    50% {
+        left: -100px;
+    }
+    100% {
+        left: 0;
+    }
+}
+
+@keyframes pageRightOutAnimate {
+    from {
+        left: 0;
+    }
+    to {
+        left: 150%;
     }
 }
