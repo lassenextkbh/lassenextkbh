@@ -18,8 +18,6 @@ body {
 }
 
 .page div {
-  font: 100px "Nunito", sans-serif;
-  font-weight: bold;
   height: auto;
   width: auto;
   top: 0;
@@ -31,8 +29,28 @@ body {
   min-width: 100vw;
 }
 
-.page__home {
+.page {
+  font: 100px "Nunito", sans-serif;
+  font-weight: bold;
   color: white;
+}
+.page__home {
+  font-style: normal;
+}
+.page__projects {
+  font-style: normal;
+}
+.page__code {
+  font-style: normal;
+}
+.page__mail {
+  font-style: normal;
+}
+.page__user {
+  font-style: normal;
+}
+.page__settings {
+  font-style: normal;
 }
 
 .tab-bar {

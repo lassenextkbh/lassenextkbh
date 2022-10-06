@@ -18,8 +18,6 @@ body {
 }
 
 .page div {
-    font: 100px "Nunito", sans-serif;
-    font-weight: bold;
     height: auto;
     width: auto;
     top: 0;
@@ -32,8 +30,32 @@ body {
 }
 
 .page {
+    font: 100px "Nunito", sans-serif;
+    font-weight: bold;
+    color: white;
+
     &__home {
-        color: white;
+        font-style: normal;
+    }
+
+    &__projects {
+        font-style: normal;
+    }
+
+    &__code {
+        font-style: normal;
+    }
+
+    &__mail {
+        font-style: normal;
+    }
+
+    &__user {
+        font-style: normal;
+    }
+
+    &__settings {
+        font-style: normal;
     }
 }
 
