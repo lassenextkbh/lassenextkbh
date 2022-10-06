@@ -1,0 +1,38 @@
+.page div {
+  height: auto;
+  width: auto;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  text-align: center;
+  position: absolute;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+.page div h1 {
+  font-size: 100px;
+  font-weight: bold;
+}
+
+.page {
+  font: 18px "Nunito", sans-serif;
+  color: white;
+}
+.page__home {
+  font-style: normal;
+}
+.page__projects {
+  font-style: normal;
+}
+.page__code {
+  font-style: normal;
+}
+.page__mail {
+  font-style: normal;
+}
+.page__user {
+  font-style: normal;
+}
+.page__settings {
+  font-style: normal;
+}/*# sourceMappingURL=page.css.map */
