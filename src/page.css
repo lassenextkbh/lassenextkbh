@@ -12,7 +12,7 @@
 .page div h1 {
   font-size: 60px;
   font-weight: bold;
-  background-color: white;
+  background-color: #1C1D1E;
   padding: 20px 30px;
   margin: 20px;
   border-radius: 15px;
@@ -57,12 +57,33 @@
   color: var(--theme-6);
 }
 
+.animate__leftIn {
+  -webkit-animation: pageLeftInAnimate 1s forwards;
+          animation: pageLeftInAnimate 1s forwards;
+}
+.animate__leftOut {
+  -webkit-animation: pageLeftOutAnimate 1s forwards;
+          animation: pageLeftOutAnimate 1s forwards;
+}
+.animate__rightIn {
+  -webkit-animation: pageRightInAnimate 1s forwards;
+          animation: pageRightInAnimate 1s forwards;
+}
+.animate__rightOut {
+  -webkit-animation: pageRightOutAnimate 1s forwards;
+          animation: pageRightOutAnimate 1s forwards;
+}
+
 @-webkit-keyframes pageLeftInAnimate {
   0% {
     left: -150%;
+    opacity: 0%;
   }
   50% {
     left: 100px;
+  }
+  70% {
+    opacity: 100%;
   }
   100% {
     left: 0;
@@ -72,36 +93,28 @@
 @keyframes pageLeftInAnimate {
   0% {
     left: -150%;
+    opacity: 0%;
   }
   50% {
     left: 100px;
+  }
+  70% {
+    opacity: 100%;
   }
   100% {
     left: 0;
   }
 }
-@-webkit-keyframes pageLeftOutAnimate {
-  from {
-    left: 0;
-  }
-  to {
-    left: -150%;
-  }
-}
-@keyframes pageLeftOutAnimate {
-  from {
-    left: 0;
-  }
-  to {
-    left: -150%;
-  }
-}
 @-webkit-keyframes pageRightInAnimate {
   0% {
     left: 150%;
+    opacity: 0%;
   }
   50% {
     left: -100px;
+  }
+  70% {
+    opacity: 100%;
   }
   100% {
     left: 0;
@@ -110,27 +123,15 @@
 @keyframes pageRightInAnimate {
   0% {
     left: 150%;
+    opacity: 0%;
   }
   50% {
     left: -100px;
   }
+  70% {
+    opacity: 100%;
+  }
   100% {
     left: 0;
-  }
-}
-@-webkit-keyframes pageRightOutAnimate {
-  from {
-    left: 0;
-  }
-  to {
-    left: 150%;
-  }
-}
-@keyframes pageRightOutAnimate {
-  from {
-    left: 0;
-  }
-  to {
-    left: 150%;
   }
 }/*# sourceMappingURL=page.css.map */

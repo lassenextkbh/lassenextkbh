@@ -12,7 +12,7 @@
     h1 {
         font-size: 60px;
         font-weight: bold;
-        background-color: white;
+        background-color: #1C1D1E;
         padding: 20px 30px;
         margin: 20px;
         border-radius: 15px;
@@ -72,44 +72,49 @@
     }   
 }
 
+.animate {
+    &__leftIn {
+        animation: pageLeftInAnimate 1s forwards;
+    }
+    &__leftOut {
+        animation: pageLeftOutAnimate 1s forwards;
+    }
+    &__rightIn {
+        animation: pageRightInAnimate 1s forwards;
+    }
+    &__rightOut {
+        animation: pageRightOutAnimate 1s forwards;
+    }
+}
+
 @keyframes pageLeftInAnimate {
     0% {
         left: -150%;
+        opacity: 0%;
     }
     50% {
         left: 100px;
     }
+    70% {
+        opacity: 100%;
+    }
     100% {
         left: 0;
-    }
-}
-
-@keyframes pageLeftOutAnimate {
-    from {
-        left: 0;
-    }
-    to {
-        left: -150%;
     }
 }
 
 @keyframes pageRightInAnimate {
     0% {
         left: 150%;
+        opacity: 0%;
     }
     50% {
         left: -100px;
     }
+    70% {
+        opacity: 100%;
+    }
     100% {
         left: 0;
-    }
-}
-
-@keyframes pageRightOutAnimate {
-    from {
-        left: 0;
-    }
-    to {
-        left: 150%;
     }
 }

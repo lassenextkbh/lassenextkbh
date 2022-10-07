@@ -18,7 +18,7 @@ body {
 }
 
 .tab-bar {
-  background-color: white;
+  background-color: #1C1D1E;
   display: flex;
   justify-content: space-between;
   padding: 20px 30px;
@@ -27,6 +27,9 @@ body {
   bottom: 0.6rem;
   gap: 25px;
   box-shadow: 0 10px 40px -20px rgba(0, 0, 0, 0.568627451);
+}
+.tab-bar img {
+  filter: invert(99%) sepia(7%) saturate(518%) hue-rotate(32deg) brightness(115%) contrast(100%);
 }
 .tab-bar a:hover {
   cursor: pointer;
